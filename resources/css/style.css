@@ -59,6 +59,26 @@ h1{
   padding: 2rem 3rem;
 }
 
+@media only screen and (max-width: 470px) {
+  h4{
+    font-size: 0.77rem;
+  }
+
+  h1{
+    font-size: 1rem;
+  }
+
+  .banner-text{
+    padding: 1rem 2rem;
+    top: 10rem;
+    width: 100%;
+  }
+
+  .banner{
+    height: 15rem;
+  }
+}
+
 /*site nav*/
 .nav-container{
   background-color: firebrick;
@@ -73,6 +93,21 @@ a{
 nav{
   display: flex;
   justify-content: space-between;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: block;
+    text-align: center;
+  }
 }
 
 /*Products*/
@@ -106,6 +141,27 @@ nav{
   padding: 0.5rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .item{
+    width: 47%;
+  }
+
+  .glasses{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .watch{
+    display: none;
+  }
+
+  .item{
+    width: 90%;
+    margin: auto;
+  }
+}
+
 /*store info*/
 .store-info{
   display: flex;
@@ -124,10 +180,30 @@ nav{
   width: 35%;
 }
 
+@media only screen and (max-width: 470px){
+  .store-info{
+    display: block;
+  }
+
+  .info{
+    width: 90%;
+    margin: auto;
+  }
+
+  .title{
+    margin-top: 0.5rem;
+  }
+}
 /*Copyright*/
 footer{
   background-color: black;
   color: white;
   padding: 5rem 0;
   margin-top: 4rem;
+}
+
+@media only screen and (max-width: 470px){
+  footer{
+    text-align: center;
+  }
 }
